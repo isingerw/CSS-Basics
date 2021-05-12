@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			ul{
+				list-style: none;
+			}
+			.menu>li{
+				float: left;
+				width: 100px;
+				
+			}
+			.menu2{
+				margin-left: -40px;
+				margin-top: 10px;
+				display: none;   /* 菜单2隐藏 */
+				
+			}
+			.menu li:hover .menu2{
+				display: block;
+				color: black;
+			}
+			.menu>li:hover{
+				color: #FF0000;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="menu">
+			<li>我的淘宝
+				<ul class="menu2">
+					<li>已买到宝贝</li>
+					<li>我的足迹</li>
+				</ul>
+			</li>
+			<li>购物车</li>
+			<li>收藏夹
+				<ul class="menu2">
+					<li>收藏的宝贝</li>
+					<li>收藏的店铺</li>
+				</ul>
+			</li>
+			<li>商品分类</li>
+		</ul>
+	</body>
+</html>

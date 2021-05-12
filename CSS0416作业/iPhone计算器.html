@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>计算器</title>
+		<style type="text/css">
+			#bg{
+				width: 250px;
+				height: 410px;
+				background: #000000;
+			}
+			#screen{
+				position: relative;
+				top: 5%;
+				width: 95%;
+				height: 85px;
+				color: #FFFFFF;
+				font-size: 28px;
+				padding-left: 210px;
+				
+				
+			}
+			
+			.btn, .btn_grey, .btn_orange{
+				width: 50px;
+				height: 50px;
+				margin: 3px;
+				text-align: center;
+				line-height: 50px;
+				font-size: 18px;
+				border-radius: 25px;	/*圆角*/
+				padding-left: 1px;
+				cursor: pointer;
+				/* 点击时去掉边框外轮廓 */
+				outline: none;
+				
+			}
+			
+			.btn_grey{
+				background: #7C7C7C;
+				color: #000000;
+			}
+			
+			.btn_orange{
+				background: #FC8E39;
+				color: #FFFFFF;
+			}
+			
+			.btn{
+				background: #2C2C2C;
+				color: #FFFFFF;
+			}
+			
+			#zero{
+				width: 110px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="bg">
+			<div id="screen"><a>0</a></div>
+			<table id="keyboard">
+				<tr>
+					
+					<td><div class="btn_grey">AC</div></td>
+					<td><div class="btn_grey">-/+</div></td>
+					<td><div class="btn_grey">%</div></td>
+					<td><div class="btn_orange">÷</div></td>
+				</tr>
+				<tr>
+					<td><div class="btn">7</div></td>
+					<td><div class="btn">8</div></td>
+					<td><div class="btn">9</div></td>
+					<td><div class="btn_orange">x</div></td>
+				</tr>
+				<tr>
+					<td><div class="btn">4</div></td>
+					<td><div class="btn">5</div></td>
+					<td><div class="btn">6</div></td>
+					<td><div class="btn_orange">-</div></td>
+				</tr>
+				<tr>
+					<td><div class="btn">1</div></td>
+					<td><div class="btn">2</div></td>
+					<td><div class="btn">3</div></td>
+					<td><div class="btn_orange">+</div></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="btn" id="zero">0</div></td>
+					<td><div class="btn">.</div></td>
+					<td><div class="btn_orange">=</div></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div>
+			<input type="button" class="btn" value="1"/>
+			<input type="button" class="btn" value="2"/>
+			<input type="button" class="btn" value="3"/>
+			<input type="button" class="btn" value="4"/>
+			<input type="button" class="btn" value="5"/>
+			<input type="button" class="btn" value="6"/>
+			<input type="button" class="btn" value="7"/>
+			<input type="button" class="btn" value="8"/>
+			<input type="button" class="btn" value="9"/>
+			<input type="button" class="btn_grey" value="AC"/>
+			<input type="button" class="btn_grey" value="-/+"/>
+			<input type="button" class="btn_grey" value="%"/>
+			<input type="button" class="btn_orange" value="÷"/>
+			<input type="button" class="btn_orange" value="x"/>
+			<input type="button" class="btn_orange" value="-"/>
+			<input type="button" class="btn_orange" value="+"/>
+			<input type="button" class="btn_orange" value="="/>
+			<input type="button" class="btn" id="zero" value="0"/>
+		</div>
+		
+	</body>
+</html>
